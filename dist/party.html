@@ -51,16 +51,16 @@
 
     <!-- Navbar -->
     <div id="nav" class="h-[75px] w-full flex items-center bg-[#be1e2d] shadow-md">
-        <div id="left" class="w-1/2 flex items-center justify-start gap-[40px]">
+        <div id="left" class="w-1/2 flex items-center justify-start gap-[15px] font-poppins">
             <img src="/assets/logo.png" alt="Logo" class="w-[150px] h-[100px]" />
-            <p class="text-[#FCFCFC] font-semibold">Home</p>
-            <p class="text-[#FCFCFC] font-semibold">Route</p>
-            <p class="text-[#FCFCFC] font-semibold">Accept Request</p>
-            <p class="text-[#FCFCFC] font-semibold">Track Route</p>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Home</button>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Route</button>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Accept Request</button>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Track Route</button>
         </div>
         <div id="right" class="w-1/2 flex items-center justify-end mr-5">
             <button id="second"
-                class="text-lg font-semibold bg-[#FCFCFC] text-[#be1e2d] px-7 py-2 rounded-full">PROFILE</button>
+                class="text-lg font-semibold bg-[#FCFCFC] text-[#be1e2d] px-5 py-2 text-[14px] rounded-full">PROFILE</button>
         </div>
     </div>
 
@@ -118,17 +118,9 @@
                 <input type="text" id="start-date" name="start-date"
                     class="w-full p-2 border border-gray-300 rounded-md" required>
             </div>
-            <div id="checkpoints-container">
-                <div class="checkpoint">
-                    <label for="checkpoint1" class="block text-[#666666] font-semibold mb-2">Checkpoint 1</label>
-                    <input type="text" id="checkpoint1" name="checkpoint1"
-                        class="w-full p-2 border border-gray-300 rounded-md">
-                </div>
-            </div>
 
-            <div class="text-center">
-                <button type="button" id="add-more-btn"
-                    class="bg-[#be1e2d] text-white rounded-md px-3 py-2 font-bold">ADD MORE</button>
+            <div>
+                Want to break your Goods into batches for faster & easy delivery
             </div>
 
             <div class="flex items-center justify-between">
@@ -136,7 +128,6 @@
                     class="text-[#be1e2d] bg-white rounded-md px-3 py-2 font-bold border border-[#be1e2d]">CANCEL</button>
                 <button type="submit" class="bg-[#be1e2d] text-white rounded-md px-3 py-2 font-bold">CONFIRM</button>
             </div>
-
         </form>
     </div>
 
@@ -156,27 +147,6 @@
             noCalendar: true,
             dateFormat: "h:i K",
             time_24hr: false
-        });
-
-        document.getElementById('add-more-btn').addEventListener('click', function () {
-            const container = document.getElementById('checkpoints-container');
-            const count = container.children.length + 1;
-            const newCheckpoint = document.createElement('div');
-            newCheckpoint.classList.add('checkpoint');
-            newCheckpoint.innerHTML = `
-                <label for="checkpoint${count}" class="block text-[#666666] font-semibold mb-2">Checkpoint ${count}</label>
-                <input type="text" id="checkpoint${count}" name="checkpoint${count}" class="w-full p-2 border border-gray-300 rounded-md">
-            `;
-            container.appendChild(newCheckpoint);
-        });
-
-        document.getElementById('cancel-btn').addEventListener('click', function () {
-            const form = document.getElementById('route-form');
-            form.reset();
-            const container = document.getElementById('checkpoints-container');
-            while (container.children.length > 1) {
-                container.removeChild(container.lastChild);
-            }
         });
     </script>
 </body>

@@ -41,21 +41,22 @@
 
     <!-- Navbar -->
     <div id="nav" class="h-[75px] w-full flex items-center bg-[#be1e2d] shadow-md">
-        <div id="left" class="w-1/2 flex items-center justify-start gap-[40px]">
+        <div id="left" class="w-1/2 flex items-center justify-start gap-[15px]">
             <img src="/assets/logo.png" alt="Logo" class="w-[150px] h-[100px]" />
-            <p class="text-[#FCFCFC] font-semibold">Home</p>
-            <p class="text-[#FCFCFC] font-semibold">Route</p>
-            <p class="text-[#FCFCFC] font-semibold">Accept Request</p>
-            <p class="text-[#FCFCFC] font-semibold">Track Route</p>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Home</button>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Route</button>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Accept Request</button>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Track Route</button>
         </div>
         <div id="right" class="w-1/2 flex items-center justify-end mr-5">
-            <button id="second" class="text-lg font-semibold bg-[#FCFCFC] text-[#be1e2d] px-7 py-2 rounded-full">PROFILE</button>
+            <button id="second"
+                class="text-lg font-semibold bg-[#FCFCFC] text-[#be1e2d] px-5 py-2 text-[14px] rounded-full">PROFILE</button>
         </div>
     </div>
     
     <!-- Main Content -->
     <div id="main" class="w-screen h-[calc(100vh-75px)] p-6 overflow-x-hidden">
-        <h1 class="text-[#be1e2d] text-3xl text-center mt-10 font-semibold">Create a New Route</h1>
+        <h1 class="text-[#be1e2d] text-5xl text-center mt-8 font-bold">Create a New Route</h1>
         <form class="p-6 rounded-lg w-[calc(100%-60px)] mx-auto mt-10 space-y-4" id="route-form">
             <div>
                 <label for="route-id" class="block text-[#666666] font-semibold mb-2">New Route ID</label>

@@ -6,20 +6,63 @@
     <link rel="stylesheet" href="output.css">
     <title>Document</title>
 </head>
-<body class="bg-#fcfcfc font-poppins">
+<body class="min-h-screen w-full font-poppins bg-gray-100">
     <!-- NAV BAR -->
     <div id="nav" class="h-[75px] w-full flex items-center bg-[#be1e2d] shadow-md">
-        <div id="left" class="w-1/2 flex items-center justify-start gap-[40px]">
+        <div id="left" class="w-1/2 flex items-center justify-start gap-[15px]">
             <img src="/assets/logo.png" alt="Logo" class="w-[150px] h-[100px]" />
-            <p class="text-[#FCFCFC] font-semibold">Home</p>
-            <p class="text-[#FCFCFC] font-semibold">Route</p>
-            <p class="text-[#FCFCFC] font-semibold">Accept Request</p>
-            <p class="text-[#FCFCFC] font-semibold">Track Route</p>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Home</button>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Route</button>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Accept Request</button>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Track Route</button>
         </div>
         <div id="right" class="w-1/2 flex items-center justify-end mr-5">
-            <button id="second" class="text-lg font-semibold bg-[#FCFCFC] text-[#be1e2d] px-7 py-2 rounded-full">PROFILE</button>
+            <button id="second"
+                class="text-lg font-semibold bg-[#FCFCFC] text-[#be1e2d] px-5 py-2 text-[14px] rounded-full">PROFILE</button>
         </div>
     </div>
+
+    <!-- PROFILE SECTION  -->
+     <div class="w-[80%] h-svh m-auto mt-12">
+        <div class="bg-[#be1e2d] w-[#100] h-[220px] rounded-[10px]">
+            <div class="text-[#fcfcfc] font-bold pl-[15px] pt-[15px] text-[24px]">MY PROFILE</div>
+            <div class="w-[73%] m-auto">
+                <span class="bg-[#c26262] px-4 py-1 text-[#fcfcfc] rounded-sm text-[15px]">My Data</span> <br>
+                <div class="bg-slate-600 w-[100%] m-auto mt-3 flex gap-5 justify-between"> 
+                    <div class="bg-[#fcfcfc] w-3/5 min-h-svh border-2 rounded-xl border-[#be1e2d] "> 
+                        <div class="place-content-center justify-between px-4 flex"> 
+                            <div class="pt-[10px]">
+                                <img src="/assets/pfp.png" class="w-[80px] h-[calc(w)]"  alt=""> 
+                            </div>
+                            <div class="place-content-center">
+                                <button class="bg-[#F0EFFA] px-4 rounded-full">Upload Photo</button> 
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="place-content-center justify-between px-4 flex"> 
+                                <div class="pt-[10px]">
+                                    <div>
+                                        <div>Your Name</div>
+                                        <div>Devesh Bhabhi</div>
+                                    </div>
+                                </div>
+                                <div class="place-content-center">
+                                    <button class="bg-[#F0EFFA] px-4 rounded-full">Edit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="bg-[#fcfcfc] w-2/4 min-h-svh border-2 rounded-xl border-[#be1e2d] "> ello ello </div>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+
+     </div>
+
     
 </body>
 </html>
