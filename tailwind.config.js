@@ -7,7 +7,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'QF': "url('/dist/login.png')",
+        'QF': "url('/assets/employee.png')",
+        'SU': "url('assets/QF_signup.png)"
 
       }
     },
