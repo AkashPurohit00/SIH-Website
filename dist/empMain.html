@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        select {
+            border-color: #be1e2d !important;
+        }
+    </style>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="min-h-screen w-full font-poppins">
+
+    <!-- Navbar -->
+    <div id="nav" class="h-[75px] w-full flex items-center bg-[#be1e2d] shadow-md">
+        <div id="left" class="w-1/2 flex items-center justify-start gap-[40px]">
+            <img src="/assets/logo.png" alt="Logo" class="w-[150px] h-[100px]" />
+            <p class="text-[#FCFCFC] font-semibold">Home</p>
+            <p class="text-[#FCFCFC] font-semibold">Route</p>
+            <p class="text-[#FCFCFC] font-semibold">Accept Request</p>
+            <p class="text-[#FCFCFC] font-semibold">Track Route</p>
+        </div>
+        <div id="right" class="w-1/2 flex items-center justify-end mr-5">
+            <button id="second" class="text-lg font-semibold bg-[#FCFCFC] text-[#be1e2d] px-7 py-2 rounded-full">PROFILE</button>
+        </div>
+    </div>
+
+    <div id="main" class="flex items-center justify-center h-[calc(100vh-75px)]">
+        <div id="container" class="flex items-center justify-between w-full max-w-screen-xl">
+            <div id="bar-chart-container" class="flex-1 p-8 border-2 border-black rounded-lg h-[600px] mr-12" style="flex-basis: 40%;">
+                <h1 class="text-2xl font-semibold ml-4 mb-1">Storage Used</h1>
+                <h4 class="ml-4 mb-4">Efficiency of the storage Used</h4>
+                <canvas id="barChart" width="600" height="400"></canvas>
+                <h1 class="mt-2 text-2xl font-medium text-gray-500">Get Suggestions</h1>
+                <h4 class="text-gray-500">How to use storage effectively</h4>
+            </div>
+            <div id="doughnut-chart-container" class="flex-1" style="flex-basis: 60%;">
+                <canvas id="doughnut" width="300" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+</body>
+</html>
