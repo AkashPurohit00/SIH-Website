@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +11,36 @@
         html {
             font-family: 'Poppins', sans-serif;
         }
-        
+
         select {
             border-color: #be1e2d !important;
         }
     </style>
     <link rel="stylesheet" href="output.css">
 </head>
+
 <body class="min-h-screen w-full font-poppins">
     <!-- Navbar -->
     <div id="nav" class="h-[75px] w-full flex items-center bg-[#be1e2d] shadow-md">
         <div id="left" class="w-1/2 flex items-center justify-start gap-[40px]">
-            <img src="/assets/logo.png" alt="Logo" class="w-[150px] h-[100px]" />
-            <button class="text-[#FCFCFC] font-semibold"><a href="main.html"> Home </a> </button>
-            <button class="text-[#FCFCFC] font-semibold"><a href=""> Route </a> </button>
-            <button class="text-[#FCFCFC] font-semibold"><a href=""> Accept Request </a> <buttonp>
-            <button class="text-[#FCFCFC] font-semibold"><a href="track_route copy.html"> Track Route </a> </button>
+            <img src="/assets/logo.png" alt="Logo" class="w-[150px] h-[100px]"/>
+
+            <button class="text-[#FCFCFC] font-semibold"> Home</button>
+
+            <a href="/dist/EMP/newroute.html"> <button class="text-[#FCFCFC] font-semibold"> Route </button> </a>
+            <a href=""> <button class="text-[#FCFCFC] font-semibold"> Accept Request </button> </a>
+            <a href="/dist//EMP/track1.html"> <button class="text-[#FCFCFC] font-semibold"> Track Route </button> </a>
         </div>
         <div id="right" class="w-1/2 flex items-center justify-end mr-5">
-            <button id="second" class="text-lg font-semibold bg-[#FCFCFC] text-[#be1e2d] px-7 py-2 rounded-full">PROFILE</button>
+            <button id="second"
+                class="text-lg font-semibold bg-[#FCFCFC] text-[#be1e2d] px-7 py-2 rounded-full">PROFILE</button>
         </div>
     </div>
 
     <div id="main" class="flex items-center justify-center h-[calc(100vh-75px)]">
         <div id="container" class="flex items-center justify-between w-full max-w-screen-xl">
-            <div id="bar-chart-container" class="flex-1 p-8 border-2 border-black rounded-lg h-[600px] mr-12" style="flex-basis: 40%;">
+            <div id="bar-chart-container" class="flex-1 p-8 border-2 border-black rounded-lg h-[600px] mr-12"
+                style="flex-basis: 40%;">
                 <h1 class="text-2xl font-semibold ml-4 mb-1">Storage Used</h1>
                 <h4 class="ml-4 mb-4">Efficiency of the storage Used</h4>
                 <canvas id="barChart" width="600" height="400"></canvas>
@@ -47,9 +53,10 @@
             </div>
         </div>
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="chart1.js"></script>
     <script src="chart2.js"></script>
 </body>
+
 </html>
