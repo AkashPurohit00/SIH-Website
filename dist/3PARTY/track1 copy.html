@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>QF | Track Route</title>
+</head>
+
+<body class="font-poppins w-full h-svh bg-[#fcfcfc]">
+    <!-- Navbar -->
+    <div id="nav" class="font-poppins h-[75px] w-full flex items-center bg-[#be1e2d] shadow-md">
+        <div id="left" class="w-1/2 flex items-center justify-start gap-[15px] font-poppins">
+            <a href="mainn.html"><img src="/assets/logo.png" alt="Logo" class="w-[150px] h-[100px]" /></a>
+            <a href="/dist/3PARTY/home.html"><button class="text-[#FCFCFC] font-semibold rounded-full px-5 text-[14px] py-2"> Home </button> </a>
+            <a href="/dist/3PARTY/findroute.html"><button class="text-[#FCFCFC] font-semibold rounded-full px-5 text-[14px] py-2"> Find Route  </button> </a>
+            <a href="/dist/3PARTY/track1 copy.html"><button class="text-[#FCFCFC] font-semibold rounded-full px-5 text-[14px] py-2"> Track Route </button> </a>
+            <a href="/dist/3PARTY/past_orders.html"><button class="text-[#FCFCFC] font-semibold rounded-full px-5 text-[14px] py-2"> Past Orders  </button> </a>
+        </div>
+        <div id="right" class="w-1/2 flex items-center justify-end mr-5">
+            <button id="prof"
+                class="text-lg font-semibold text-[#fcfcfc] border-[#fcfcfc] border-[1px] px-5 py-2 text-[14px] font-poppins rounded-full">PROFILE</button>
+        </div>
+    </div>
+    <!-- NAV BAR ENDS HERE -->
+    <div class="w-[80%] m-auto mt-[30px]">
+        <p class="text-[#666666] text-[40px] font-bold">Truck ID</p>
+        <div class="flex justify-between w-[30%]">
+            <input type="text" placeholder="Enter TRUCK ID"
+                class="bg-[#ffffff] rounded-md p-2 text-[12px] border-[#1f1f1f] border-[1px]"> </input>
+            <div class="bg-[#be1e2d] place-content-center rounded-md">
+                <a href="/dist/EMP/track_route.html">
+                <button class="bg-[#be1e2d] text-[#fcfcfc] font-semibold px-8 rounded-md"> FIND </button> </a>
+            </div>
+        </div>
+        <div id="container" class="">
+            <div class="flex gap-5 mt-4">
+                <div class="w-4/6  h-auto flex-col space-y-5">
+                    <div
+                        class="border-[1px] border-black rounded-md h-auto justify-between place-content-center bg-[#ffffff]">
+                        <div class="h-auto flex justify-between px-5 py-3 place-content-center">
+                            <div class="leading-7">
+                                <p class=" text-[12px]">From</p>
+                                <p class="text-[40px] font-semibold">START</p>
+                                <p class="text-[#666666] text-[10px]">Status</p>
+                            </div>
+                            <div class="place-content-center"> <img src="/assets/tracktruck.png" alt=""> </div>
+                            <div class="leading-7">
+                                <p class="text-right text-[12px] ">To</p>
+                                <p class="text-right text-[40px] font-semibold">DEST</p>
+                                <p class="text-right text-[#666666] text-[10px]">Status</p>
+
+                            </div>
+                        </div>
+                        <div class="bg-[#be1e2d] text-[#fcfcfc] p-2 px-5 h-[36px] align-middle text-[13px]">Truck status</div>
+                    </div>
+                    <div
+                        class="border-[1px] border-black rounded-md h-auto justify-between place-content-center bg-[#ffffff]">
+                        <div><img src="/assets/map.png" alt="" class="rounded-md"></div>
+                        <div class="bg-[#be1e2d] text-[#fcfcfc] p-2 px-5 h-[36px] align-middle text-[18px]  font-bold">
+                            MAP</div>
+                    </div>
+
+                </div>
+                <div class="flex-col w-2/6 border-[#000000] border-[1px] rounded-md">
+                    <div class="m-4">
+                        <div class="leading-8 mb-3"> 
+                            <p class="text-[#878787] text-[20px]">Reached</p> 
+                            <p class="text-[38px]">Checkpoints</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" mt-5">
+                <a href="/dist/mainn.html"><button class="place-content-end text-[#be1e2d] bg-[#ECECEC] rounded-md px-3 py-2 font-bold"> 
+                    LOG OUT
+                </button>  </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
