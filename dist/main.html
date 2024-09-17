@@ -9,6 +9,9 @@
     <style>
         html {
             font-family: 'Poppins', sans-serif;
+            
+    scroll-behavior: smooth;
+  
         }
         
         select {
@@ -19,19 +22,22 @@
 </head>
 <body class="min-h-screen w-full font-poppins">
 
-    <!-- Navbar -->
     <div id="nav" class="h-[75px] w-full flex items-center bg-[#be1e2d] shadow-md">
-        <div id="left" class="w-1/2 flex items-center justify-start gap-[80px]">
-            <img src="/assets/logo.png" alt="Logo" class="w-[200px] h-[130px]" />
-            <p class="text-[#FCFCFC] font-poppins">About us</p>
-            <p class="text-[#FCFCFC] font-poppins">Contact us</p>
-            <p class="text-[#FCFCFC] font-poppins">Department</p>
+        <div id="left" class="w-2/3 flex items-center justify-start gap-[40px]"> <!-- Reduced gap -->
+          <img src="/assets/logo.png" alt="Logo" class="w-[200px] h-[130px]" />
+          <p class="text-[#FCFCFC] font-poppins whitespace-nowrap">About us</p>
+          <p class="text-[#FCFCFC] font-poppins whitespace-nowrap">Contact us</p>
+          <p class="text-[#FCFCFC] font-poppins whitespace-nowrap">Department</p>
+          <button id="first" class="text-sm font-poppins bg-[#FCFCFC] text-[#be1e2d] px-8 py-3 rounded-full whitespace-nowrap">
+            <a href="#main7(1)">Login as an employee</a> <!-- Ensure no parentheses -->
+          </button>
         </div>
-        <div id="right" class="w-1/2 flex items-center justify-end gap-[30px] mr-5">
-            <button id="first" class="text-lg font-poppins bg-[#FCFCFC] text-[#be1e2d] px-6 py-3 rounded-full">Log In</button>
-            <button id="second" class="text-lg font-poppins bg-[#FCFCFC] text-[#be1e2d] px-7 py-3 rounded-full">Sign Up</button>
+        <div id="right" class="w-1/3 flex items-center justify-end gap-[20px] mr-5"> <!-- Adjusted width and gap -->
+          <button id="first" class="text-lg font-poppins bg-[#FCFCFC] text-[#be1e2d] px-6 py-3 rounded-full">Log In</button>
+          <button id="second" class="text-lg font-poppins bg-[#FCFCFC] text-[#be1e2d] px-7 py-3 rounded-full">Sign Up</button>
         </div>
-    </div>
+      </div>
+      
 
     <!-- Main Content -->
     <div id="main" class="relative min-h-[calc(100vh-75px)] overflow-hidden ">
