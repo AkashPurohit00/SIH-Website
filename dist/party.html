@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Route</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <style>
+        html {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        select {
+            border-color: #be1e2d !important;
+        }
+
+        /* Hide number input arrows */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"] {
+            -moz-appearance: textfield;
+            /* Firefox */
+        }
+
+        /* Custom styles for the select element */
+        .custom-select option {
+            color: black;
+            /* Default text color */
+            background-color: white;
+            /* Default background color */
+        }
+
+        /* Custom styles for the select element options on hover */
+        .custom-select option:hover {
+            color: white;
+            /* Text color on hover */
+            background-color: #be1e2d;
+            /* Background color on hover (red) */
+        }
+    </style>
+</head>
+
+<body class="min-h-screen w-full font-poppins bg-gray-100">
+
+    <!-- Navbar -->
+    <div id="nav" class="h-[75px] w-full flex items-center bg-[#be1e2d] shadow-md">
+        <div id="left" class="w-1/2 flex items-center justify-start gap-[15px] font-poppins">
+            <img src="/assets/logo.png" alt="Logo" class="w-[150px] h-[100px]" />
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Home</button>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Find Route</button>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Track Route</button>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Past Orders</button>
+        </div>
+        <div id="right" class="w-1/2 flex items-center justify-end mr-5">
+            <button id="second"
+                class="text-lg font-semibold bg-[#FCFCFC] text-[#be1e2d] px-5 py-2 text-[14px] rounded-full">PROFILE</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main" class="w-screen h-[calc(100vh-75px)] p-6 overflow-x-hidden">
+        <h1 class="text-[#be1e2d] text-5xl text-center mt-8 font-bold">Find the Best Route for You</h1>
+        <form class="p-6 rounded-lg w-[calc(100%-60px)] mx-auto mt-10 space-y-3" id="route-form">
+            <div>
+                <label for="pick-loc" class="block text-[#666666] font-semibold mb-2">Pickup Location</label>
+                <input type="text" id="truck-type" name="truck-type"
+                    class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+
+            <div>
+                <label for="drop-loc" class="block text-[#666666] font-semibold mb-2">Drop Location</label>
+                <input type="text" id="truck-type" name="truck-type"
+                    class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div>
+                <label for="goods-type" class="block text-[#666666] font-semibold mb-2">Type of Goods</label>
+                <select id="goods-type" name="goods-type"
+                    class="w-full p-2 border border-gray-300 rounded-md custom-select" required>
+                    <option value="" disabled selected>Select Goods Type</option>
+                    <option value="option1">Furniture</option>
+                    <option value="option2">Fragile</option>
+                    <option value="option3">Food & Vegetables</option>
+                    <option value="option3">Clothes</option>
+                </select>
+            </div>
+            <div>
+                <label for="start-date" class="block text-[#666666] font-semibold mb-2">Pickup Date</label>
+                <input type="text" id="start-date" name="start-date"
+                    class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+
+            <div>
+                <label for="end-date" class="block text-[#666666] font-semibold mb-2">Delivery Date</label>
+                <input type="text" id="end-date" name="end-date" class="w-full p-2 border border-gray-300 rounded-md"
+                    required>
+            </div>
+
+            <div>
+                <label for="weight" class="block text-[#666666] font-semibold mb-2">Weight of Goods</label>
+                <input type="number" id="weight" name="weight" placeholder="(approx. weights in kgs)"
+                class="w-full p-2 border border-gray-300 rounded-md " required>
+            </div>
+
+            <div>
+                <label for="truck-type" class="block text-[#666666] font-semibold mb-2">Truck Type</label>
+                <input type="text" id="truck-type" name="truck-type"
+                    class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div>
+                <label for="max-date" class="block text-[#666666] font-semibold mb-2">Maximum Date of Delivery</label>
+                <input type="text" id="start-date" name="start-date"
+                    class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+
+            <div>
+                Want to break your Goods into batches for faster & easy delivery
+            </div>
+
+            <div class="flex items-center justify-center">
+                <button type="submit" class="bg-[#be1e2d] text-white rounded-md px-3 py-2 font-bold"> SEARCH </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Flatpickr JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("#start-date", {
+            dateFormat: "Y-m-d"
+        });
+
+        flatpickr("#end-date", {
+            dateFormat: "Y-m-d"
+        });
+
+        flatpickr("#time", {
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "h:i K",
+            time_24hr: false
+        });
+    </script>
+</body>
+
+</html>
