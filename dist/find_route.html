@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Route</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <style>
+        html {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        select {
+            border-color: #be1e2d !important;
+        }
+
+        /* Hide number input arrows */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"] {
+            -moz-appearance: textfield;
+            /* Firefox */
+        }
+
+        /* Custom styles for the select element */
+        .custom-select option {
+            color: black;
+            /* Default text color */
+            background-color: white;
+            /* Default background color */
+        }
+
+        /* Custom styles for the select element options on hover */
+        .custom-select option:hover {
+            color: white;
+            /* Text color on hover */
+            background-color: #be1e2d;
+            /* Background color on hover (red) */
+        }
+    </style>
+</head>
+
+<body class="min-h-screen w-full font-poppins bg-gray-100">
+
+    <!-- Navbar -->
+    <div id="nav" class="h-[75px] w-full flex items-center font-poppins bg-[#be1e2d] shadow-md">
+        <div id="left" class="w-1/2 flex items-center justify-start gap-[15px]">
+            <img src="/assets/logo.png" alt="Logo" class="w-[150px] h-[100px]" />
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Home</button>
+            <button class="text-[#be1e2d] font-semibold border-[1px] rounded-full px-5 text-[14px] bg-[#fcfcfc] py-2">Find Route</button>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Track Route </button>
+            <button class="text-[#FCFCFC] font-semibold border-[1px] rounded-full px-5 text-[14px] py-2">Past Orders</button>
+        </div>
+        <div id="right" class="w-1/2 flex items-center justify-end mr-5">
+            <button id="second"
+                class="text-lg font-semibold bg-[#FCFCFC] text-[#be1e2d] px-5 py-2 text-[14px] rounded-full">PROFILE</button>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div id="container" class="grid-flow-row w-[90%] m-auto mt-10 gap-3 space-y-10">
+        <div class="bg-[#be1e2d] drop-shadow-md h-auto p-2 rounded-lg">
+            <div class="m-3 flex">
+                <div class="flex-col content-evenly m-3 w-2/5 space-y-5 ">
+                    <div class="bg-[#fcfcfc] rounded-lg p-2 flex justify-between text-[12px] place-content-center text-center font-bold text-[#747474]"> From: <div class="font-bold font-poppins text-[20px] text-[#000000]">DELHI</div></div>
+                    <div class="bg-[#fcfcfc] rounded-lg p-2 flex justify-between text-[12px] place-content-center text-center font-bold text-[#747474]">To: <div class="font-bold font-poppins text-[20px] text-[#000000]">AJMEER</div></div>
+                    <div class="bg-[#fcfcfc] rounded-lg p-2 justify-between text-[12px] block font-bold text-[#747474]">Maximum Delivery Date:
+                        <div class="text-[20px] font-bold text-[#000000]">
+                            29th November 2024
+                        </div>
+                    </div>
+
+                </div>
+                <div class="m-3 bg-[#fcfcfc] w-2/5 rounded-lg text-[32px] font-semibold p-3">Checkpoint List
+                    <div class="bg-[#fcfcfc] flex-col space-y-3 font-normal text-[16px] m-3">
+                        <div>Checkpoint 1 : Gurugram</div>
+                        <div>Checkpoint 2 : Alwar</div>
+                        <div>Checkpoint 3 : Jaipur</div>
+                    </div>
+                </div>
+                <div class="m-3 bg-[#fcfcfc] w-1/4 rounded-lg justify-center pt-3">
+                    <div class="justify-center tezt-[32px]">
+                        <p class="text-[26px] leading-7 text-[#be1e2d] text-center font-bold">Smart Slot<br>Allocation<br> 
+                        </p>
+                    </div>
+                    <div class="h-[1px] bg-[#d9d9d9] w-[80%] m-auto mt-2 mb-2"></div>
+                    <div class="m-auto place-content-center text-center text-[22px]">
+                        <p> AVAILABLE </p>
+                    </div>
+                    <div class="flex justify-between px-2 pb-3">
+                        <div><input type="radio"> 2 batches</div>
+                        <div><input type="radio"> 3 batches</div>
+                    </div>
+                </div>
+                <div class="w-[1px] mx-[12px] bg-black"></div>
+                <div class="m-3 w-1/3 rounded-lg place-content-center ">
+                    <div class="text-center text-[#fcfcfc] font-bold text-[70px]">₹5105</div>
+                    <div class="text-center text-[#fcfcfc] font-bold"> <button class="bg-[#fcfcfc] p-2 rounded-sm text-[#be1e2d] px-4 text-[12px] mt-3">BOOK NOW</button></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="bg-[#be1e2d] drop-shadow-md h-auto p-2 rounded-lg">
+            <div class="m-3 flex">
+                <div class="flex-col content-evenly m-3 w-2/5 space-y-5 ">
+                    <div class="bg-[#fcfcfc] rounded-lg p-2 flex justify-between text-[12px] place-content-center text-center font-bold text-[#747474]"> From: <div class="font-bold font-poppins text-[20px] text-[#000000]">DELHI</div></div>
+                    <div class="bg-[#fcfcfc] rounded-lg p-2 flex justify-between text-[12px] place-content-center text-center font-bold text-[#747474]">To: <div class="font-bold font-poppins text-[20px] text-[#000000]">AJMEER</div></div>
+                    <div class="bg-[#fcfcfc] rounded-lg p-2 justify-between text-[12px] block font-bold text-[#747474]">Maximum Delivery Date:
+                        <div class="text-[20px] font-bold text-[#000000]">
+                            30th November 2024
+                        </div>
+                    </div>
+
+                </div>
+                <div class="m-3 bg-[#fcfcfc] w-2/5 rounded-lg text-[32px] font-semibold p-3">Checkpoint List
+                    <div class="bg-[#fcfcfc] flex-col space-y-3 font-normal text-[16px] m-3">
+                        <div>Checkpoint 1 : Gurugram</div>
+                        <div>Checkpoint 2 : Alwar</div>
+                        <div>Checkpoint 3 : Jaipur</div>
+                    </div>
+                </div>
+                <div class="m-3 bg-[#fcfcfc] w-1/4 rounded-lg justify-center pt-3">
+                    <div class="justify-center tezt-[32px]">
+                        <p class="text-[26px] leading-7 text-[#be1e2d] text-center font-bold">Smart Slot<br>Allocation<br> 
+                        </p>
+                    </div>
+                    <div class="h-[1px] bg-[#d9d9d9] w-[80%] m-auto mt-2 mb-2"></div>
+                    <div class="m-auto place-content-center text-center text-[22px]">
+                        <p>NOT AVAILABLE </p>
+                    </div>
+                    <div class="flex justify-between px-2 pb-3">
+                        <div><input type="radio"> 2 batches</div>
+                        <div><input type="radio"> 3 batches</div>
+                    </div>
+                </div>
+                <div class="w-[1px] mx-[12px] bg-black"></div>
+                <div class="m-3 w-1/3 rounded-lg place-content-center ">
+                    <div class="text-center text-[#fcfcfc] font-bold text-[70px]">₹6100</div>
+                    <div class="text-center text-[#fcfcfc] font-bold"> <button class="bg-[#fcfcfc] p-2 rounded-sm text-[#be1e2d] px-4 text-[12px] mt-3">BOOK NOW</button></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="bg-[#be1e2d] drop-shadow-md h-auto p-2 rounded-lg">
+            <div class="m-3 flex">
+                <div class="flex-col content-evenly m-3 w-2/5 space-y-5 ">
+                    <div class="bg-[#fcfcfc] rounded-lg p-2 flex justify-between text-[12px] place-content-center text-center font-bold text-[#747474]"> From: <div class="font-bold font-poppins text-[20px] text-[#000000]">DELHI</div></div>
+                    <div class="bg-[#fcfcfc] rounded-lg p-2 flex justify-between text-[12px] place-content-center text-center font-bold text-[#747474]">To: <div class="font-bold font-poppins text-[20px] text-[#000000]">AJMEER</div></div>
+                    <div class="bg-[#fcfcfc] rounded-lg p-2 justify-between text-[12px] block font-bold text-[#747474]">Maximum Delivery Date:
+                        <div class="text-[20px] font-bold text-[#000000]">
+                            1st December 2024
+                        </div>
+                    </div>
+
+                </div>
+                <div class="m-3 bg-[#fcfcfc] w-2/5 rounded-lg text-[32px] font-semibold p-3">Checkpoint List
+                    <div class="bg-[#fcfcfc] flex-col space-y-3 font-normal text-[16px] m-3">
+                        <div>Checkpoint 1 : Gurugram</div>
+                        <div>Checkpoint 2 : Alwar</div>
+                        <div>Checkpoint 3 : Jaipur</div>
+                    </div>
+                </div>
+                <div class="m-3 bg-[#fcfcfc] w-1/4 rounded-lg justify-center pt-3">
+                    <div class="justify-center tezt-[32px]">
+                        <p class="text-[26px] leading-7 text-[#be1e2d] text-center font-bold">Smart Slot<br>Allocation<br> 
+                        </p>
+                    </div>
+                    <div class="h-[1px] bg-[#d9d9d9] w-[80%] m-auto mt-2 mb-2"></div>
+                    <div class="m-auto place-content-center text-center text-[22px]">
+                        <p>NOT AVAILABLE </p>
+                    </div>
+                    <div class="flex justify-between px-2 pb-3">
+                        <div><input type="radio"> 2 batches</div>
+                        <div><input type="radio"> 3 batches</div>
+                    </div>
+                </div>
+                <div class="w-[1px] mx-[12px] bg-black"></div>
+                <div class="m-3 w-1/3 rounded-lg place-content-center ">
+                    <div class="text-center text-[#fcfcfc] font-bold text-[70px]">₹5911</div>
+                    <div class="text-center text-[#fcfcfc] font-bold"> <button class="bg-[#fcfcfc] p-2 rounded-sm text-[#be1e2d] px-4 text-[12px] mt-3">BOOK NOW</button></div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

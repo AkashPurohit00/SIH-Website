@@ -3,7 +3,7 @@ const ctx2 = document.getElementById('doughnut');
   const doughnut = new Chart(ctx2, {
     type: 'doughnut',
     data: {
-      labels: ['Truck1', 'Truck2', 'Truck3', 'Truck4', 'Truck5', 'Truck6'],
+      labels: ['pepsi', 'H&M', 'Amazon', 'Flipkart', 'LensKart', 'Myntra'],
       datasets: [{
         label: 'Truck Productivity ratio',
         data: [12, 19, 3, 5, 2, 3],
